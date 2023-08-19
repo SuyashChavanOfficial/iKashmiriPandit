@@ -63,22 +63,3 @@ body {
 .carousel-control-next {
     right: 50px !important; /* Adjust the right position */
 }
-
-/* Center carousel images horizontally and vertically on mobile devices */
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .carousel-inner .carousel-item img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-    }
-}
-
-
