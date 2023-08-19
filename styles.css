@@ -42,7 +42,7 @@ body {
 /* Define dimensions for the image frame */
 .carousel-inner .carousel-item .image-frame {
     width: 1200px; /* Adjust the width as needed */
-    height: 500px; /* Adjust the height as needed */
+    height: 630px; /* Adjust the height as needed */
     margin: 0 auto; /* Center the image frame */
     overflow: hidden;
     box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.6);
@@ -63,3 +63,4 @@ body {
 .carousel-control-next {
     right: 50px !important; /* Adjust the right position */
 }
+
