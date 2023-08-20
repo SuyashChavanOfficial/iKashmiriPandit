@@ -37,6 +37,14 @@ body {
 #kashmirPhotosCarousel {
     position: relative;
     top: 20px; /* Adjust for your navbar height */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-inner .carousel-item {
+    width: 100%; /* Adjust as needed */
+    max-height: 630px; /* Adjust as needed */
+    margin: 0 auto; /* Center the carousel items */
 }
 
 /* Define dimensions for the image frame */
@@ -53,6 +61,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 /* Carousel button position change */
@@ -64,3 +73,31 @@ body {
     right: 50px !important; /* Adjust the right position */
 }
 
+/* FOR MOBILE DEVICES */
+
+@media (max-width: 720px) {
+
+    .grid-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .logo-img {
+        display: none;
+    }
+
+    .image-frame {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        width: 100%; /* Ensure the container takes full width */
+        height: 300px; /* Set desired height */
+        border: 1px solid #ccc; /* Just for visualization */
+    }
+
+    .centre-image {
+        max-width: 100%; /* Ensure the image doesn't exceed container width */
+        max-height: 100%; /* Ensure the image doesn't exceed container height */
+    }
+
+}
