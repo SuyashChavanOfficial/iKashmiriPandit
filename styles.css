@@ -1,8 +1,13 @@
+
+/* !------------------------------------------------------------ INDEX ------------------------------------------------------------! */
+
+
 body {
     background-color: #F4EEE0 !important;
     color: #000000 !important;
 
 }
+
 /* HEAD INTRO SECTION  */
 
 .grid-container {
@@ -33,71 +38,167 @@ body {
 
 /* PHOTO CAROUSEL */
 
-/* Position the carousel images at the top of the screen below the navbar */
-#kashmirPhotosCarousel {
-    position: relative;
-    top: 20px; /* Adjust for your navbar height */
-    max-width: 1200px;
-    margin: 0 auto;
+    /* Position the carousel images at the top of the screen below the navbar */
+    #kashmirPhotosCarousel {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .carousel-inner .carousel-item {
+        width: 100%; /* Adjust as needed */
+        max-height: 630px; /* Adjust as needed */
+        margin: 0 auto; /* Center the carousel items */
+    }
+
+    /* Define dimensions for the image frame */
+    .carousel-inner .carousel-item .image-frame {
+        width: 1200px; /* Adjust the width as needed */
+        height: 630px; /* Adjust the height as needed */
+        margin: 0 auto; /* Center the image frame */
+        overflow: hidden;
+        box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Make images fill the frame while preserving aspect ratio */
+        .carousel-inner .carousel-item .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+    /* Carousel button position change */
+        .carousel-control-prev {
+            left: 50px !important; /* Adjust the left position */
+        }
+
+        .carousel-control-next {
+            right: 50px !important; /* Adjust the right position */
+        }
+
+/* INFORMATION SECTION  */
+
+    /* Links Section  */
+    
+        .info-container {
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            margin-top: 30px;
+        }
+
+        .info-links {
+            margin-left: 20px;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .info-links a {
+            color: #000000;
+        }
+
+        .info-links li {
+            list-style-type: circle;
+        }
+
+        .info-head {
+            text-align: center;
+        }
+
+    /* Information Section  */
+
+        .info-grid{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .info-grid-item {
+            float: left;
+            width: 50%; /* Make the paragraph take 50% of the width */
+            padding: 20px; /* Add padding for spacing */
+            box-sizing: border-box;
+        }
+
+/* FOOTER  */
+
+footer {
+    background-color: rgb(45, 41, 41);
+    padding: 5px 0; 
+    color: white;
 }
 
-.carousel-inner .carousel-item {
-    width: 100%; /* Adjust as needed */
-    max-height: 630px; /* Adjust as needed */
-    margin: 0 auto; /* Center the carousel items */
+footer a {
+    margin: 10px;
+    color: white;
 }
 
-/* Define dimensions for the image frame */
-.carousel-inner .carousel-item .image-frame {
-    width: 1200px; /* Adjust the width as needed */
-    height: 630px; /* Adjust the height as needed */
-    margin: 0 auto; /* Center the image frame */
-    overflow: hidden;
-    box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.6);
+#footer-disclaimer {
+    font-size: 10px;
+    margin-top: 15px;
+    padding: 0 390px;
 }
 
-/* Make images fill the frame while preserving aspect ratio */
-.carousel-inner .carousel-item .image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0 auto;
-}
-
-/* Carousel button position change */
-.carousel-control-prev {
-    left: 50px !important; /* Adjust the left position */
-}
-
-.carousel-control-next {
-    right: 50px !important; /* Adjust the right position */
-}
 
 /* FOR MOBILE DEVICES */
 
-@media (max-width: 1080px) {
+    @media (max-width: 1080px) {
 
-    .grid-container {
-        display: block;
-        text-align: center;
-    }
-    
-    .logo-img {
-        display: none;
+        .grid-container {
+            display: block;
+            text-align: center;
+        }
+        
+        .logo-img {
+            display: none;
+        }
+
+        .image-frame {
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            width: 100%; /* Ensure the container takes full width */
+            height: 300px; /* Set desired height */
+            border: 1px solid #ccc; /* Just for visualization */
+        }
+
+        .centre-image {
+            max-width: 100%; /* Ensure the image doesn't exceed container width */
+            max-height: 100%; /* Ensure the image doesn't exceed container height */
+        }
+
     }
 
-    .image-frame {
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Horizontally center */
-        align-items: center; /* Vertically center */
-        width: 100%; /* Ensure the container takes full width */
-        height: 300px; /* Set desired height */
-        border: 1px solid #ccc; /* Just for visualization */
-    }
+/* !------------------------------------------------------------ END ------------------------------------------------------------! */
 
-    .centre-image {
-        max-width: 100%; /* Ensure the image doesn't exceed container width */
-        max-height: 100%; /* Ensure the image doesn't exceed container height */
-    }
+/* !------------------------------------------------------------ INFO.HTML ------------------------------------------------------------! */
 
+.kashmiri-pandit-info {
+    padding: 30px;
+}
+
+.info-intro {
+    text-align: left;
+    font-weight: bold;
+}
+
+.info-quote {
+    font-style: italic;
+    padding: 30px;
+    text-align: center;
+}
+
+.info-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.info-img {
+    width: 500px;
+    border: solid 2px;
+}
+
+.info-main {
+    margin: 20px 0;
+    line-height: 1.6;
 }
