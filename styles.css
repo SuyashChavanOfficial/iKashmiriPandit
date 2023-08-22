@@ -119,6 +119,11 @@ body {
             text-align: center;
         }
 
+        .info-main-item {
+            text-align: center;
+            padding: 5px;
+        }
+
 /* FOOTER  */
 
 footer {
@@ -134,17 +139,12 @@ footer a {
     color: white;
 }
 
-.social-media-logos {
-    margin-top: 10px;
-}
-
-.social-media-logos a {
-    display: inline-block;
+.social-media-logo a {
     margin: 0 10px;
 }
 
 #footer-disclaimer {
-    font-size: 10px;
+    font-size: 8px;
     margin-top: 15px;
     width: auto;
 }
@@ -168,16 +168,31 @@ footer a {
             max-width: 100%; /* Ensure the image doesn't exceed container width */
             max-height: 100%; /* Ensure the image doesn't exceed container height */
         }
-
-        .info-main-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Set to one column on small screens */
-            text-align: center;
-            gap: 20px; /* Add gap between items */
+        .info-container {
+            display: flex; /* Use flex display to center align horizontally */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
         }
-
-        .info-grid-item {
-            width: 100%; /* Make each item take full width of the container */
+    
+        .info-main-grid {
+            display: block;
+            width: 100%; /* Make the grid take full width */
+            text-align: center; /* Center the content within the grid */
+            margin-top: 20px; /* Add some space between the grid and other elements */
+        }
+    
+        .info-main-item {
+            align-items: center; /* Center items horizontally */
+            margin: 20px 0;
+            margin-bottom: 1em;
+        }
+    
+        .info-img {
+            width: 50%;
+            max-width: 100%; /* Ensure the image doesn't exceed container width */
+            height: auto; /* Allow the height to adjust proportionally */
+            border: solid 2px;
+            display: block;
         }
 
         .info-links {
@@ -200,7 +215,7 @@ footer a {
 
 .info-quote {
     font-style: italic;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
