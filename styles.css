@@ -85,6 +85,7 @@ body {
             display: grid;
             grid-template-columns: 2fr 8fr;
             margin-top: 30px;
+            gap: 20px;
         }
 
         .info-links {
@@ -111,17 +112,24 @@ body {
         .info-grid{
             width: 100%;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .info-grid-item {
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 1em;
         }
 
         .info-main-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             text-align: center;
         }
 
         .info-main-item {
             text-align: center;
-            padding: 5px;
+            margin: 10px;
         }
 
 /* FOOTER  */
@@ -222,6 +230,7 @@ footer a {
 .info-img {
     width: 100%;
     border: solid 2px;
+    margin: 0 auto;
 }
 
 .info-main {
