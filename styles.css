@@ -176,6 +176,11 @@ footer a {
             max-width: 100%; /* Ensure the image doesn't exceed container width */
             max-height: 100%; /* Ensure the image doesn't exceed container height */
         }
+
+        .info {
+            margin: 0 20px;
+        }
+
         .info-container {
             display: flex; /* Use flex display to center align horizontally */
             flex-direction: column; /* Stack items vertically */
@@ -193,6 +198,10 @@ footer a {
             align-items: center; /* Center items horizontally */
             margin: 20px 0;
             margin-bottom: 1em;
+        }
+
+        .info-main-item p {
+            text-align: left;
         }
     
         .info-img {
