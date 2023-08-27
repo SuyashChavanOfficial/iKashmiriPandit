@@ -177,7 +177,7 @@ footer a {
         }
 
         .info {
-            padding: 0 5em;
+            padding: 0;
         }
 
         .info-container {
@@ -186,19 +186,6 @@ footer a {
             align-items: center; /* Center items horizontally */
         }
     
-        .info-main-grid {
-            display: block;
-            width: 100%; /* Make the grid take full width */
-            text-align: center; /* Center the content within the grid */
-            margin-top: 20px; /* Add some space between the grid and other elements */
-        }
-    
-        .info-main-item {
-            align-items: center; /* Center items horizontally */
-            margin: 20px 0;
-            margin-bottom: 1em;
-        }
-
         .info p {
             text-align: left;
         }
@@ -245,8 +232,8 @@ footer a {
 
 /* !------------------------------------------------------------ TABLE SECTION ------------------------------------------------------------! */
 
-.table {
-    padding: 50px;
+.table-section {
+    padding: 0 20px;
 }
 
 .table-img {
