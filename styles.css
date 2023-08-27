@@ -21,19 +21,8 @@ body {
 
 /* NAVBAR SECTION  */
 
-.dropdown-toggle::after {
-    display: none !important;
-}
-
-.hover-dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar-nav .nav-item .nav-link {
-    margin-right: 50px;
-    margin-left: 25px;
-    color: #000000 !important;
-
+.navbar-nav .nav-link {
+    margin: 3px 30px;
 }
 
 /* PHOTO CAROUSEL */
@@ -84,7 +73,7 @@ body {
         .info-container {
             display: grid;
             grid-template-columns: 2fr 8fr;
-            margin-top: 30px;
+            margin-top: 15px;
             gap: 20px;
         }
 
@@ -132,9 +121,10 @@ body {
             margin: 10px;
         }
 
-        #info-main-page-img {
-            width: 35em;
-            margin-bottom: 10px;
+        .info-img {
+            width: 25em;
+            border: solid 2px;
+            margin: 0 auto 10px;
         }
 
 /* FOOTER  */
@@ -233,6 +223,7 @@ footer a {
 
 .kashmiri-pandit-info {
     padding: 30px;
+    text-align: center;
 }
 
 .info-intro {
@@ -246,13 +237,24 @@ footer a {
     text-align: center;
 }
 
-.info-img {
-    width: 100%;
-    border: solid 2px;
-    margin: 0 auto;
-}
-
 .info-main {
     margin: 20px 0;
     line-height: 1.6;
 }
+
+
+/* !------------------------------------------------------------ TABLE SECTION ------------------------------------------------------------! */
+
+.table {
+    padding: 50px;
+}
+
+.table-img {
+    float: left;
+    margin: 1px 5px;
+}
+
+.table-responsive p {
+    text-align: justify;
+    font-size: 15px;
+  }
