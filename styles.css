@@ -3,9 +3,14 @@
 
 
 body {
-    background-color: #F4EEE0 !important;
+    background-color: #ffffff !important;
     color: #000000 !important;
 
+}
+
+a:hover {
+    color: #ff9900 !important;/* Orange color */
+    text-decoration: none !important;
 }
 
 /* HEAD INTRO SECTION  */
@@ -80,16 +85,18 @@ body {
         .info-links {
             margin-left: 20px;
             text-align: left;
-            background-color: white;
             padding: 20px;
+            color: white;
+            background-color: #4d4d4d;
         }
 
         .info-links a {
-            color: #000000;
+            color: white;
         }
 
         .info-links li {
             list-style-type: circle;
+            color: red;
         }
 
         .info-head {
