@@ -1,19 +1,25 @@
 
 /* !------------------------------------------------------------ INDEX ------------------------------------------------------------! */
 
-
 body {
     background-color: #ffffff !important;
     color: #000000 !important;
+}
 
+p {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 a:hover {
-    color: #ff9900 !important;/* Orange color */
+    color: #ff9900 !important;
     text-decoration: none !important;
 }
 
 /* HEAD INTRO SECTION  */
+
+.title {
+    font-family: 'Crimson Text', serif;
+}
 
 .grid-container {
     display: grid;
@@ -24,6 +30,10 @@ a:hover {
     text-align: center;
 }
 
+.head-para {
+    font-weight: bolder;
+}
+
 /* NAVBAR SECTION  */
 
 .navbar-nav .nav-link {
@@ -31,6 +41,13 @@ a:hover {
 }
 
 /* PHOTO CAROUSEL */
+
+    .carousel-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
     /* Position the carousel images at the top of the screen below the navbar */
     #kashmirPhotosCarousel {
@@ -84,26 +101,51 @@ a:hover {
 
         .info-links {
             margin-left: 20px;
-            text-align: left;
+            text-align: centre;
             padding: 20px;
             color: white;
-            background-color: #4d4d4d;
+            background-color: #757474;
         }
 
         .info-links a {
             color: white;
+            text-decoration: none;
         }
 
         .info-links li {
             list-style-type: circle;
-            color: red;
+            color: white;
+            
+            margin-bottom: 10px; /* Add some spacing between list items */
         }
 
-        .info-head {
+        .info-links h2 {
             text-align: center;
+            font-size: 1.25rem;
+            font-weight: 700;
         }
 
     /* Information Section  */
+
+        .info h2 {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            color: rgb(237, 45, 45);
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+
+        .info h3 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.50rem;
+            color: #269ed2;
+        }
+
+        .info h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.25rem;
+        }
 
         .info-grid{
             width: 100%;
@@ -132,6 +174,32 @@ a:hover {
             width: 25em;
             border: solid 2px;
             margin: 0 auto 10px;
+        }
+
+    /* IMAGE CAROUSEL  */
+
+        .img-container {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            display: flex; /* Use flexbox to center images */
+            align-items: center; /* Vertically center images */
+            justify-content: center; /* Horizontally center images */
+        }
+
+        .img-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: auto;
+            right: auto;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;  
+        }
+
+        .img-container img.active {
+            opacity: 1;
         }
 
 /* FOOTER  */
@@ -169,6 +237,10 @@ footer a {
             text-align: center;
         }
 
+        .carousel-container {
+            max-width: 100%;
+        }
+
         .grid-container {
             display: block;
             text-align: center;
@@ -192,6 +264,11 @@ footer a {
             flex-direction: column; /* Stack items vertically */
             align-items: center; /* Center items horizontally */
         }
+
+        .info-flex-item {
+            padding: 10px;
+            margin: 10px;
+        }
     
         .info p {
             text-align: left;
@@ -209,9 +286,16 @@ footer a {
             display: none;
         }
 
+        .table tbody tr {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .table tbody td {
+            width: 100%; /* Make each cell take the full width */
+            padding: 10px 10px 0;
+        }
     }
-
-/* !------------------------------------------------------------ END ------------------------------------------------------------! */
 
 /* !------------------------------------------------------------ INFO.HTML ------------------------------------------------------------! */
 
@@ -241,6 +325,11 @@ footer a {
 
 .table-section {
     padding: 0 20px;
+}
+
+.table-head {
+    text-align: center;
+    font-weight: bolder;
 }
 
 .table-img {
