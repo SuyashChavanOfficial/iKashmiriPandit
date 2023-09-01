@@ -269,6 +269,25 @@ footer a {
             padding: 10px;
             margin: 10px;
         }
+
+        .info h2 {
+            font-size: 1.5rem; /* Adjust the font size as needed */
+        }
+    
+        .info h3 {
+            font-size: 1.25rem; /* Adjust the font size as needed */
+        }
+    
+        .info p {
+            font-size: 1rem; /* Adjust the font size as needed */
+            text-align: left;
+        }
+
+        /* Add padding to .info-grid-item */
+        .info-grid-item {
+            padding: 10px;
+            margin: 10px;
+        }
     
         .info p {
             text-align: left;
@@ -276,7 +295,7 @@ footer a {
     
         .info-img {
             width: 50%;
-            max-width: 100%; /* Ensure the image doesn't exceed container width */
+            max-width: none; /* Ensure the image doesn't exceed container width */
             height: auto; /* Allow the height to adjust proportionally */
             border: solid 2px;
             display: block;
