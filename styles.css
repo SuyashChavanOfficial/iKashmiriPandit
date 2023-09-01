@@ -19,6 +19,7 @@ a:hover {
 
 .title {
     font-family: 'Crimson Text', serif;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .grid-container {
@@ -341,6 +342,10 @@ footer a {
 
 
 /* !------------------------------------------------------------ TABLE SECTION ------------------------------------------------------------! */
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
 
 .table-section {
     padding: 0 20px;
@@ -353,10 +358,16 @@ footer a {
 
 .table-img {
     float: left;
-    margin: 1px 5px;
+    margin: 1px 10px 1px 0px;
+
 }
 
 .table-responsive p {
     text-align: justify;
     font-size: 15px;
-  }
+}
+
+.table-btn {
+    margin-bottom: 5px;
+    text-align: center;
+}
