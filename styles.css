@@ -179,29 +179,30 @@ a:hover {
 
     /* IMAGE CAROUSEL  */
 
-        .img-container {
-            width: 500px;
-            height: 300px;
-            position: relative;
-            display: flex; /* Use flexbox to center images */
-            align-items: center; /* Vertically center images */
-            justify-content: center; /* Horizontally center images */
-        }
+        /* Center the carousel */
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .img-container img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: auto;
-            right: auto;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;  
-        }
+    .img-container-inner {
+        text-align: center;
+    }
 
-        .img-container img.active {
-            opacity: 1;
-        }
+    /* Set a consistent height and max-width for the carousel images */
+    .img-container-item img {
+        height: 20rem; /* Allow images to adjust height while maintaining aspect ratio */
+        width: 30rem;
+        max-width: 100%; /* Allow images to adjust width while maintaining aspect ratio */
+    }
+
+    /* Add some spacing between carousel items */
+    .img-container-item {
+        padding: 0 15px; /* Adjust as needed */
+        display: inline-block;
+        float: none;
+    }
 
 /* FOOTER  */
 
@@ -223,11 +224,12 @@ footer a {
 }
 
 #footer-disclaimer {
+    text-align: center;
     font-size: 8px;
     margin-top: 15px;
     width: auto;
+    padding: 0 5em;
 }
-
 
 
 /* FOR MOBILE DEVICES */
